@@ -6,7 +6,7 @@ contract SimpleAuction {
   //+-AuctionEndTime. By Default the time is in Seconds.
   uint256 public auctionEndTime;
 
-  //+-Current State of the auctionEndTime:_
+  //+-Current State of the Auction:_
   address public highestBidder;
   uint256 public highestBid;
 
