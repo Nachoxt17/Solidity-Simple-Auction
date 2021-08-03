@@ -40,7 +40,7 @@ contract SimpleAuction {
     emit HighestBidIncrease(msg.sender, msg.value);
   }
 
-  function witdrawAuctionProfitsToUser() public returns (bool) {
+  function witdrawAuctionLosingBidsToUser() public returns (bool) {
     uint256 amount = pendingReturns[msg.sender];
     if(amount > 0) {
       pendingReturns[msg.sender] = 0;
